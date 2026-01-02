@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: hello step
+        needs: hello-world
         run: |
           echo " this is line sample one"
           echo " this is line sample two"

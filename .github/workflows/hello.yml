@@ -10,9 +10,9 @@ jobs:
           echo " this is line two"
   hello-world-two:
     runs-on: ubuntu-latest
+    needs: hello-world
     steps: 
       - name: hello step
-        needs: hello-world
         run: |
           echo " this is line sample one"
           echo " this is line sample two"

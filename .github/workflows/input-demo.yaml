@@ -1,0 +1,24 @@
+name: testing the input variaables
+on:
+  workflow_dispatch:
+    inputs:
+      env_input: 
+        description: environment name
+        required: true
+        default: dev
+        type: choice
+        options:
+          - dev
+          - tst
+          - prd
+      tag_name:
+        description: tag name
+        required: true
+
+  jobs:
+    name: test input variable
+    runs-on: ubuntu-latest
+    steps:
+      - name: app deploy
+        run: echo "deployig app version ${{inputs.tag_name}} on ${{inputs.env_input}}"
+        

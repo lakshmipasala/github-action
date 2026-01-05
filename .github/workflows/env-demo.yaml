@@ -3,7 +3,8 @@ on: workflow_dispatch
 env:
   env_demo: dev
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - name: test env demo
-      run: echo "$env_demo"
+  envdemo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test env demo
+        run: echo "$env_demo"

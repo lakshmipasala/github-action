@@ -1,4 +1,5 @@
-name: testing the input variaables
+name: testing the input variables
+
 on:
   workflow_dispatch:
     inputs:
@@ -14,10 +15,11 @@ on:
       tag_name:
         description: tag name
         required: true
+
 jobs:
-  name: test input variable
+  test_input_variable:
+    name: test input variable
     runs-on: ubuntu-latest
     steps:
       - name: app deploy
-        run: echo "deployig app version ${{inputs.tag_name}} on ${{inputs.env_input}}"
-        
+        run: echo "deploying app version ${{ inputs.tag_name }} on ${{ inputs.env_input }}"

@@ -15,8 +15,8 @@ on:
         description: tag name
         required: true
 
-  jobs:
-    name: test input variable
+jobs:
+  name: test input variable
     runs-on: ubuntu-latest
     steps:
       - name: app deploy

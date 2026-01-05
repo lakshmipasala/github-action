@@ -3,7 +3,7 @@ on: push
 jobs:
   build:
     outputs:
-      version: "${{steps.step_id.outputs.version}}"
+      version: ${{steps.step_id.outputs.version}}
     runs-on: ubuntu-latest
     steps:
       - name: step1

@@ -14,4 +14,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: step2
-        run: echo "${{needs.builds.outputs.version}}"
+        run: echo "print version number = ${{needs.build.outputs.version}}"

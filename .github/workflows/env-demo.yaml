@@ -3,6 +3,8 @@ on: workflow_dispatch
 env:
   env_demo: "dev"
 jobs:
+  env:
+    env_demo: "test"
   envdemo:
     runs-on: ubuntu-latest
     steps:

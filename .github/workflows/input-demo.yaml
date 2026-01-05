@@ -14,7 +14,6 @@ on:
       tag_name:
         description: tag name
         required: true
-
 jobs:
   name: test input variable
     runs-on: ubuntu-latest
